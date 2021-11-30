@@ -1,0 +1,15 @@
+<div data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
+  <div class="cmp-helloworld" data-cmp-is="helloworld">
+    <h2 class="cmp-helloworld__title">Hello World Component</h2>
+    <div class="cmp-helloworld__item" data-sly-test="${model.text}">
+      <p class="cmp-helloworld__item-label">Text property:</p>
+      <pre
+        class="cmp-helloworld__item-output"
+        data-cmp-hook-helloworld="property"
+      >
+${model.text}</pre
+      >
+      <p>jakiś tekst pragrafu ${model.message}</p>
+    </div>
+  </div>
+</div>
